@@ -15,10 +15,10 @@ New-TaniumWebSession -credential (Get-Credential) -ServerURI https://yourTaniumS
 ## Create a PSCustomObject to work with.  There are numerous properties that we will need to capture in order to work with and it is simply easier to work with one modular PowerShell object rather than a lot of distinct variables.
 
 $questionObject = [PSCustomObject]@{
-				question             = 'Get Online from all machines with ( Is Virtual contains yes and ( Is Windows equals true and Windows OS Type contains workstation ) )'
-				parsed               = $null
-				id                   = $null
-				results              = $null
+	question             = 'Get Online from all machines with ( Is Virtual contains yes and ( Is Windows equals true and Windows OS Type contains workstation ) )'
+	parsed               = $null
+	id                   = $null
+	results              = $null
 }
 
 ## Pass the question to the Tanium question parser and capture the response in the $questionObject.parsed property
