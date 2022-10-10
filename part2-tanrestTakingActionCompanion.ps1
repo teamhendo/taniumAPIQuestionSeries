@@ -23,7 +23,7 @@ $exampleObject.actionObject = New-TaniumActionObject `
  
 ## Submit the constructed action object via TanREST and capture the returned data in the action property
 
-$exampleObject.action = New-TaniumAction -Data $ipuObject.actionObject
+$exampleObject.action = New-TaniumAction -Data $exampleObject.actionObject
 
 ## Get information about the current state of the submitted action via TanREST
 
